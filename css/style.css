@@ -1,0 +1,507 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scrollbar-width: auto;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1cd9ff;
+    border-radius: 10px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    background: url('/img/capa.png') no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar-container {
+    width: auto;
+    height: auto;
+}
+
+.navbar-container img {
+    width: 300px;
+}
+
+.menu-container {
+    z-index: 2;
+    margin-top: 65px;
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-caixa {
+    width: 30px;
+    height: 25px;
+    margin-right: 55px;
+    transition: 400ms;
+}
+
+.menu-linhas {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.menu-responsivo {
+    z-index: 1;
+    transform: translateX(-100%);
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.338);
+    transition: 400ms;
+}
+
+.menu-responsivo-lista {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.menu-responsivo-lista li {
+    width: 100%;
+    height: auto;
+}
+
+.menu-responsivo-lista li a {
+    padding: 5px 10vw;
+    list-style: none;
+    background-color: #1cd9ff;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.menu-responsivo-lista a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header-conteudo {
+    width: 60%;
+    height: auto;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.header-conteudo h3 {
+    margin-top: 10px;
+}
+
+.header-conteudo .conteudo-01 {
+    font-size: 4vw;
+}
+
+.header-conteudo .conteudo-02 {
+    font-size: 1.5vw;
+}
+
+.header-conteudo .conteudo-03 {
+    font-size: 1.5vw;
+}
+
+.entrar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.entrar a {
+    text-decoration: none;
+    color: black;
+    background-color: #1cd9ff;
+    border: 2px solid black;
+    padding: 1% 4%;
+    border-radius: 10px;
+}
+
+.corpo {
+    margin: 0 auto;
+    width: 80%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 50px 0;
+}
+
+.corpo-conteudo-01 {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.corpo-conteudo-01 h3 {
+    font-size: 2vw;
+}
+
+.corpo-conteudo-01-ul {
+    margin: 0 auto;
+    width: 100;
+    height: auto;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.corpo-conteudo-01-ul ul {
+    font-size: 1.3vw;
+}
+
+.corpo-conteudo-01-ul li {
+    list-style: none;
+}
+
+.corpo-conteudo-01 a {
+
+    text-decoration: none;
+    color: black;
+    background-color: #1cd9ff;
+    border: 2px solid black;
+    padding: 1% 4%;
+    border-radius: 10px;
+
+}
+
+.corpo-conteudo-02 {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpo-conteudo-02 img {
+    height: 350px;
+    transform: translateY(-20px);
+    width: 400px;
+}
+
+
+.corpo-02 {
+    width: 100%;
+    height: auto;
+    background: url('/img/background-image.jpg') no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.corpo-02-conteudo {
+    height: 300px;
+    width: 300px;
+    margin: 10px 5px;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.corpo-02 i {
+    color: white;
+    font-size: 4vw;
+}
+
+.corpo-02 h3 {
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2vw;
+
+}
+
+.corpo-02 p {
+    color: white;
+    font-size: 1.2vw;
+
+}
+
+.galeria {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+
+.slides-container {
+    width: 100%;
+    height: auto;
+}
+
+.slides {
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+}
+
+.slides img {
+    border: 5px solid black;
+}
+
+.slides-celulares {
+    display: none;
+    margin: 0 auto;
+    width: 95%;
+    height: 100%;
+}
+
+.slides-celulares img {
+    border: 5px solid black;
+}
+
+/* Aqui estou começando a sessão de número 4! */
+
+section.contatos {
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+    background-color: #472563;
+}
+
+.contatos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 1%;
+
+}
+
+.form {
+    height: auto;
+    width: 50%;
+    color: white;
+    padding-left: 10%;
+}
+
+.form h2 {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.form p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.form form {
+    margin-top: 15px;
+}
+
+.form form input[type=text] {
+    width: 90%;
+    max-width: 480px;
+    margin-top: 8px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.form form input[type=email] {
+    width: 90%;
+    max-width: 480px;
+    margin-top: 8px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.form form textarea {
+    width: 90%;
+    margin-top: 8px;
+    max-width: 480px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    height: 160px;
+}
+
+.form form input[type=submit] {
+    border: 0;
+    background-color: #1cd9ff;
+    width: 165px;
+    height: 44px;
+    font-size: 1vw;
+    color: black;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 30px;
+}
+
+.contatos-direita {
+    width: 50%;
+    height: 400px;
+    padding: 50px;
+    background: url('/img/capa.png') no-repeat center center/cover;
+    border: 2px solid white;
+    border-radius: 20px;
+
+
+}
+
+footer {
+    padding: 40px 2%;
+    background: #192123;
+    color: white;
+}
+
+footer p:nth-of-type(1) {
+    float: left;
+    font-size: 14px;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
+    font-size: 14px;
+}
+
+
+@media (min-width: 0px) and (max-width: 660px) {
+    .navbar-container {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .navbar-container img {
+        width: 100%;
+    }
+
+    .header-conteudo {
+        width: 100%;
+    }
+
+    .header-conteudo .conteudo-01 {
+        font-size: 6vw;
+    }
+
+    .header-conteudo .conteudo-02 {
+        font-size: 3vw;
+    }
+
+    .header-conteudo .conteudo-03 {
+        font-size: 2.5vw;
+    }
+
+    .entrar a {
+        padding: 2% 8%;
+    }
+
+    .menu-responsivo-lista li {
+        width: 100%;
+    }
+
+    .corpo-conteudo-01 h3 {
+        font-size: 5vw;
+    }
+
+    .corpo-conteudo-01-ul ul {
+        font-size: 3vw;
+    }
+
+    .corpo-conteudo-02 {
+        display: none;
+    }
+
+    .corpo-02 i {
+        font-size: 9vw;
+    }
+
+    .corpo-02 h3 {
+        font-size: 5vw;
+
+    }
+
+    .corpo-02 p {
+        color: white;
+        font-size: 3vw;
+
+    }
+
+    .corpo-02-conteudo {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.253);
+    }
+
+    .slides {
+        display: none;
+    }
+
+    .slides-celulares {
+        display: block;
+    }
+
+    .contatos-direita {
+        display: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

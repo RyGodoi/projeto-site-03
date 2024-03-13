@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scrollbar-width: auto;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1cd9ff;
+    border-radius: 10px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    background: url('/img/capa.png') no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar-container {
+    width: auto;
+    height: auto;
+}
+
+.navbar-container img {
+    width: 300px;
+}
+
+.menu-container {
+    margin-top: 65px;
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-caixa {
+    width: 30px;
+    height: 25px;
+    margin-right: 55px;
+    transition: 400ms;
+}
+
+.menu-linhas {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.menu-responsivo {
+    z-index: 1;
+    transform: translateX(-100%);
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.338);
+    transition: 400ms;
+}
+
+.menu-responsivo-lista {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.menu-responsivo-lista li {
+    width: 100%;
+    height: auto;
+}
+
+.menu-responsivo-lista li a {
+    padding: 5px 10vw;
+    list-style: none;
+    background-color: #1cd9ff;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.menu-responsivo-lista a {
+    text-decoration: none;
+    color: black;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+    background: #1cd9ff50;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.form-signin h1 {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.form-signin form {
+    padding: 60px;
+}
+
+.form-signin form .btn {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.form-signin form .btn:hover,
+.form-signin form .btn:focus {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+.form-signin form .form-control:focus {
+    border-color: #ced4da;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-signin .copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.form-signin .form-control {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.form-signin .form-check {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.form-signin .form-check label {
+    font-size: 0.9em;
+}
+
+.form-signin .form-check input {
+    margin-right: 0.5em;
+}
+
+.form-signin .form-check input:checked {
+    background-color: #9ce060;
+    border-color: #81c63f;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type=email] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type=password] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
